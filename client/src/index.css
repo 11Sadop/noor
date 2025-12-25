@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --font-arabic: 'Amiri', serif;
+
+  /* Islamic Calm Theme - Emerald/Teal & Gold */
+  --background: 150 20% 98%;      /* Very soft green-tinted white */
+  --foreground: 160 40% 15%;      /* Deep emerald text */
+  
+  --primary: 165 65% 35%;         /* Rich Emerald */
+  --primary-foreground: 150 20% 98%;
+
+  --secondary: 40 60% 95%;        /* Soft Gold/Cream */
+  --secondary-foreground: 35 70% 30%; /* Dark Bronze */
+
+  --muted: 150 10% 94%;
+  --muted-foreground: 160 20% 50%;
+
+  --accent: 35 80% 55%;           /* Gold Accent */
+  --accent-foreground: 0 0% 100%;
+
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 160 20% 90%;
+  --input: 160 20% 90%;
+  --ring: 165 65% 35%;
+  --radius: 1rem;
+}
+
+.dark {
+  --background: 165 50% 5%;       /* Deepest Jungle Green/Black */
+  --foreground: 150 20% 94%;      
+  
+  --primary: 165 50% 45%;         /* Lighter Emerald for dark mode */
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 165 30% 15%;       /* Dark Green Secondary */
+  --secondary-foreground: 150 20% 90%;
+
+  --muted: 165 30% 15%;
+  --muted-foreground: 150 15% 65%;
+
+  --accent: 35 80% 55%;           /* Gold remains gold */
+  --accent-foreground: 0 0% 100%;
+
+  --destructive: 0 62% 30%;
+  --destructive-foreground: 0 85% 60%;
+
+  --border: 165 30% 15%;
+  --input: 165 30% 15%;
+  --ring: 165 50% 45%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-primary/20 selection:text-primary;
+    font-family: var(--font-sans);
+  }
+  
+  /* Apply Arabic font to specific elements */
+  .font-arabic {
+    font-family: var(--font-arabic);
+    line-height: 1.8;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/60 dark:bg-black/20 backdrop-blur-md border border-white/20 shadow-lg;
+  }
+  
+  .islamic-pattern {
+    background-image: radial-gradient(var(--primary) 1px, transparent 1px);
+    background-size: 20px 20px;
+    opacity: 0.05;
+  }
+}
