@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+    
+    <title>نور - مواقيت الصلاة والأذكار والأدعية</title>
+    <meta name="description" content="تطبيق نور الإسلامي - مواقيت الصلاة، كم باقي على الصلاة، أذكار الصباح والمساء، أدعية يومية، أحاديث نبوية، تسبيح، اتجاه القبلة، حاسبة الزكاة. رفيقك الإسلامي اليومي." />
+    <meta name="keywords" content="مواقيت الصلاة، اذكار، ادعية، احاديث، تسبيح، القبلة، اتجاه القبلة، اذكار الصباح، اذكار المساء، كم باقي على الصلاة، prayer times، adhkar، dua، islamic app" />
+    
+    <meta property="og:title" content="نور - مواقيت الصلاة والأذكار والأدعية" />
+    <meta property="og:description" content="تطبيق إسلامي شامل - مواقيت الصلاة، أذكار الصباح والمساء، أدعية، أحاديث نبوية، تسبيح، اتجاه القبلة" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/icon-512.png" />
+    <meta property="og:locale" content="ar_SA" />
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="نور - مواقيت الصلاة والأذكار" />
+    <meta name="twitter:description" content="تطبيق إسلامي شامل - مواقيت الصلاة، أذكار، أدعية، أحاديث، تسبيح، القبلة" />
+    
+    <link rel="icon" type="image/png" href="/icon-512.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
+    
+    <meta name="theme-color" content="#0c4a3e" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="نور" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="نور" />
+    <meta name="msapplication-TileColor" content="#0c4a3e" />
+    <meta name="msapplication-TileImage" content="/icon-512.png" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="/assets/index-BW0rNW7z.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-ClFyk-Ha.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then((registration) => {
+              console.log('SW registered:', registration.scope);
+            })
+            .catch((error) => {
+              console.log('SW registration failed:', error);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>
